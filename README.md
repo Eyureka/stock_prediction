@@ -5,4 +5,4 @@ This project is based on time series analysis and uses seasonal ARIMA model to p
 
 The dataset used for the prediction can be downloaded from yahoo finance website(https://in.finance.yahoo.com/quote/INFY.NS/history?period1=1470268800&period2=1628035200&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true)
 
-The model is integrated with a web app and is deployed in heroku
+The model is integrated with a web app and is deployed in heroku(https://eyureka-stock-pred.herokuapp.com/)
