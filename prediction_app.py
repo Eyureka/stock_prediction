@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 import pickle
+import math
 
 app = Flask(__name__)
 
@@ -15,8 +16,12 @@ def home():
 
 @app.route("/predict", methods=["get"])
 def predict():
-    
-    weeks = int(request.args.get("weeks"))
+
+    weeks = 0
+    try:
+        weeks = math.ceil(float(request.args.get("weeks")))
+    except:
+        weeks = 0
     
     future_period = 1 if weeks<=0 else weeks
     
